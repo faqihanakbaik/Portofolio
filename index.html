@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Muhammad Faqih Muqoddam — junior web developer yang berfokus pada pengembangan web dengan PHP, Laravel, JavaScript, dan teknologi database.">
+    <meta name="theme-color" content="#f9f6f0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Muhammad Faqih Muqoddam — Web Developer Portfolio">
+    <meta property="og:description" content="Selected projects, experience, and skills in web development.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Faqih Muqoddam — Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.png" alt="" class="brand-logo">
+                <span class="brand-text">FM.</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-controls="navMenu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                <li><a href="#proyek" class="nav-link">Proyek</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema terang atau gelap" aria-pressed="false">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2 class="hero-greeting">Halo, saya</h2>
+                <h1 class="hero-title">Muhammad Faqih Muqoddam</h1>
+                <h2 class="hero-subtitle">Junior Web Developer</h2>
+                <p class="hero-description">
+                    Saya siswa kelas XII Rekayasa Perangkat Lunak di SMKN 20 Jakarta yang terus belajar membangun pengalaman digital melalui web development dan UI/UX. Saya suka memahami masalah, merancang alur yang jelas, lalu menerjemahkannya menjadi produk yang bisa digunakan.
+                </p>
+                <div class="hero-actions">
+                    <a href="#proyek" class="btn btn-primary">Lihat Karya Saya</a>
+                    <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/faqihanakbaik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/faqih-muqoddam-93a359394/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-placeholder">
+                        <!-- Profile image -->
+                        <img src="assets/Faqih.jpeg" alt="Muhammad Faqih Muqoddam" class="profile-img">
+                    </div>
+                    <div class="image-decoration decoration-1"></div>
+                    <div class="image-decoration decoration-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">Siapa Saya?</h3>
+                    <p class="about-description">
+                        Saya adalah siswa kelas XII RPL di SMKN 20 Jakarta yang berfokus pada pengembangan web dan eksplorasi UI/UX. Saya belajar membangun aplikasi menggunakan HTML, CSS, JavaScript, PHP, Laravel, serta teknologi database; di luar web, saya juga mengeksplorasi pengembangan aplikasi mobile.
+                    </p>
+                    <p class="about-description">
+                        Melalui proyek seperti EVENTY dan SIMAS Asset Management, saya berlatih menyusun fitur, memikirkan kebutuhan pengguna, dan bekerja secara terstruktur. Pengalaman organisasi, kepanitiaan, dan Pramuka juga membantu saya belajar bertanggung jawab, berkomunikasi, dan bekerja sama. Saya masih terus berkembang dan berusaha menunjukkan kemampuan lewat karya nyata.
+                    </p>
+                    
+                    <div class="about-skills">
+                        <div class="skill-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <span>Rekayasa Perangkat Lunak (RPL)</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span>SMKN 20 Jakarta</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Belajar Sepanjang Hayat</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="assets/CV.jpg" class="btn btn-primary" download="CV-Muhammad-Faqih-Muqoddam.jpg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Unduh CV
+                        </a>
+                        <a href="assets/CV.jpg" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Lihat CV
+                        </a>
+                        <a href="magang.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Lihat Sertifikat Magang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="pendidikan">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pendidikan</h2>
+                <p class="section-subtitle">Riwayat Pendidikan Formal</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Education Tabs -->
+            <div class="education-tabs">
+                <button class="education-tab active" data-tab="smk">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    SMK
+                </button>
+                <button class="education-tab" data-tab="smp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    SMP
+                </button>
+                <button class="education-tab" data-tab="sd">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    SD
+                </button>
+            </div>
+
+            <!-- Education Content -->
+            <div class="education-content-wrapper">
+                <!-- SMK Content -->
+                <div class="education-tab-content active" id="smk-content">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="education-details">
+                            <span class="education-year">2024 - 2027</span>
+                            <h3 class="education-title">SMKN 20 Jakarta</h3>
+                            <p class="education-major">Rekayasa Perangkat Lunak (RPL)</p>
+                            <div class="education-status">
+                                <span class="status-badge status-current">Sedang Berjalan</span>
+                            </div>
+                            <p class="education-description">
+                                Saat ini sedang menempuh pendidikan di kelas XII jurusan Rekayasa Perangkat Lunak. Mempelajari pengembangan perangkat lunak, pemrograman web dan mobile, database, serta UI/UX design.
+                            </p>
+                            <div class="education-highlights">
+                                <h4>Keahlian yang Dipelajari:</h4>
+                                <ul>
+                                    <li>Pengembangan Web (HTML, CSS, JavaScript, PHP, Laravel)</li>
+                                    <li>Pengembangan Mobile (Flutter, Dart)</li>
+                                    <li>Database Management (MySQL, PostgreSQL, Supabase)</li>
+                                    <li>UI/UX Design (Figma)</li>
+                                    <li>Version Control (Git, GitHub)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SMP Content -->
+                <div class="education-tab-content" id="smp-content">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="education-details">
+                            <span class="education-year">2021 - 2024</span>
+                            <h3 class="education-title">SMPN 87 Jakarta</h3>
+                            <p class="education-major">Sekolah Menengah Pertama</p>
+                            <div class="education-status">
+                                <span class="status-badge status-completed">Lulus</span>
+                            </div>
+                            <p class="education-description">
+                                Menyelesaikan pendidikan menengah pertama dengan mengembangkan fondasi akademik yang kuat. Aktif dalam kegiatan organisasi dan kepanitiaan sekolah.
+                            </p>
+                            <div class="education-highlights">
+                                <h4>Pencapaian:</h4>
+                                <ul>
+                                    <li>Aktif dalam organisasi sekolah</li>
+                                    <li>Mengikuti berbagai kegiatan kepanitiaan</li>
+                                    <li>Mengembangkan kemampuan kepemimpinan dan kerja sama tim</li>
+                                    <li>Membangun fondasi akademik yang solid</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SD Content -->
+                <div class="education-tab-content" id="sd-content">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="education-details">
+                            <span class="education-year">Lulus 2021</span>
+                            <h3 class="education-title">SDN 014</h3>
+                            <p class="education-major">Sekolah Dasar</p>
+                            <div class="education-status">
+                                <span class="status-badge status-completed">Lulus</span>
+                            </div>
+                            <p class="education-description">
+                                Menyelesaikan pendidikan dasar sebagai fondasi awal perjalanan pendidikan. Membangun karakter dan kemampuan dasar yang menjadi bekal untuk jenjang selanjutnya.
+                            </p>
+                            <div class="education-highlights">
+                                <h4>Fondasi Pendidikan:</h4>
+                                <ul>
+                                    <li>Membangun karakter dan nilai dasar</li>
+                                    <li>Mengembangkan kemampuan literasi dan numerasi</li>
+                                    <li>Menumbuhkan rasa ingin tahu dan semangat belajar</li>
+                                    <li>Membentuk dasar kepribadian yang baik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="experience" id="pengalaman">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pengalaman & Pendidikan</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1 April – 31 Mei 2026</span>
+                        <h3 class="timeline-title">Magang di BRIN</h3>
+                        <p class="timeline-subtitle">Badan Riset dan Inovasi Nasional</p>
+                        <p class="timeline-description">Pengalaman magang untuk belajar di lingkungan riset dan teknologi. Detail tugas ditampilkan secara umum agar tidak mengklaim tanggung jawab yang belum diverifikasi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Pengalaman sekolah</span>
+                        <h3 class="timeline-title">Ketua Kelas dan Bendahara Organisasi</h3>
+                        <p class="timeline-subtitle">Kepemimpinan dan tanggung jawab</p>
+                        <p class="timeline-description">Pernah menjadi ketua kelas di beberapa jenjang, termasuk kelas XI, serta menjalankan tanggung jawab sebagai bendahara organisasi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024–2025</span>
+                        <h3 class="timeline-title">Kepanitiaan 17 Agustus</h3>
+                        <p class="timeline-subtitle">Kegiatan dan kepanitiaan</p>
+                        <p class="timeline-description">Terlibat dalam kepanitiaan peringatan Hari Kemerdekaan Indonesia dan pernah mendapat tanggung jawab sebagai ketua panitia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Pendidikan saat ini · 2024–2027</span>
+                        <h3 class="timeline-title">Rekayasa Perangkat Lunak (RPL)</h3>
+                        <p class="timeline-subtitle">SMKN 20 Jakarta · Kelas XII</p>
+                        <p class="timeline-description">Mempelajari pengembangan perangkat lunak, pemrograman, database, serta pembuatan aplikasi web dan mobile.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021–2024</span>
+                        <h3 class="timeline-title">Pendidikan Menengah Pertama</h3>
+                        <p class="timeline-subtitle">SMPN 87 Jakarta</p>
+                        <p class="timeline-description">Menyelesaikan pendidikan menengah pertama dengan mengembangkan fondasi akademik dan karakter.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Lulus 2021</span>
+                        <h3 class="timeline-title">Pendidikan Dasar</h3>
+                        <p class="timeline-subtitle">SDN 014</p>
+                        <p class="timeline-description">Menyelesaikan pendidikan dasar sebagai fondasi awal perjalanan pendidikan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Kegiatan kepramukaan</span>
+                        <h3 class="timeline-title">Pramuka Garuda</h3>
+                        <p class="timeline-subtitle">Kepramukaan</p>
+                        <p class="timeline-description">Pengalaman kepramukaan yang membentuk kedisiplinan, kemandirian, dan kerja sama.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="sertifikat">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sertifikat & Prestasi</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="certificates-wrapper">
+                <div class="certificate-card">
+                    <div class="certificate-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 5.5L20 8l-4 4 .9 6L12 15l-4.9 3 .9-6-4-4 5.5-.5L12 2z"/></svg></div>
+                    <h3 class="certificate-title">Pramuka Garuda</h3>
+                    <p class="certificate-issuer">Kepramukaan</p>
+                    <p class="certificate-type">Pencapaian Pramuka Garuda</p>
+                    <a href="assets/pramuka.jpeg" class="btn-certificate" target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+                    <h3 class="certificate-title">OSN Tingkat Kota</h3>
+                    <p class="certificate-issuer">Olimpiade Sains Nasional</p>
+                    <p class="certificate-type">Lolos ke tingkat kota</p>
+                    <a href="assets/osn.jpeg" class="btn-certificate" target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <h3 class="certificate-title">Magang BRIN</h3>
+                    <p class="certificate-issuer">Badan Riset dan Inovasi Nasional</p>
+                    <p class="certificate-type">Sertifikat magang</p>
+                    <a href="magang.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="technologies" id="keahlian">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Teknologi yang Saya Gunakan</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon html">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">HTML</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon css">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">CSS</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon javascript">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">JavaScript</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon php">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.686-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.285.164h-1.18l-.327 1.681h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.33 1.752zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">PHP</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon mysql">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.174.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483h.88zm12.287 4.08h-1.23l-.05-.843h-.046c-.3.638-.77.955-1.416.955-.207 0-.36-.054-.462-.16-.1-.11-.148-.265-.148-.468 0-.453.148-.753.443-.906.295-.154.72-.232 1.278-.232h.216v-.232c0-.4-.228-.6-.683-.6-.336 0-.72.093-1.152.28v-.675c.3-.14.645-.21 1.034-.21.732 0 1.098.39 1.098 1.17v2.925zm-2.133-.532c.214 0 .405-.078.572-.233.167-.155.25-.356.25-.598v-.29h-.216c-.68 0-1.022.23-1.022.69 0 .315.138.472.416.472zM18.551 5.507c-.033-.127-.063-.266-.063-.4.145.004.29.03.434.052-.013.012-.027.024-.04.036-.126.1-.186.263-.18.442-.01.052-.036.094-.05.14h-.015c-.083-.094-.127-.206-.127-.334 0-.094.02-.19.04-.286zM9.815 18.695h-.88v-4.08h.88v4.08zm-.44-5.53c-.293 0-.44-.146-.44-.438 0-.146.048-.263.144-.35.096-.088.224-.132.384-.132.293 0 .44.146.44.438 0 .146-.048.263-.144.35-.096.088-.224.132-.384.132z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">MySQL</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon laravel">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0l4.512 2.6h.016c.014.01.026.021.04.033.012.009.025.018.037.027.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.016l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Laravel</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon git">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Git</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon github">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">GitHub</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon figma">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Figma</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon canva">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.352 17.328c-.416.336-.912.516-1.44.516-1.32 0-2.388-1.068-2.388-2.388s1.068-2.388 2.388-2.388c.528 0 1.02.18 1.44.516v-1.848c-.48-.192-.996-.288-1.44-.288-2.22 0-4.02 1.8-4.02 4.02s1.8 4.02 4.02 4.02c.444 0 .96-.096 1.44-.288v-1.872zm1.536-9.768c.42-.336.912-.516 1.44-.516 1.32 0 2.388 1.068 2.388 2.388s-1.068 2.388-2.388 2.388c-.528 0-1.02-.18-1.44-.516v1.848c.48.192.996.288 1.44.288 2.22 0 4.02-1.8 4.02-4.02s-1.8-4.02-4.02-4.02c-.444 0-.96.096-1.44.288v1.872zm6.528 7.572c.42-.336.912-.516 1.44-.516 1.32 0 2.388 1.068 2.388 2.388s-1.068 2.388-2.388 2.388c-.528 0-1.02-.18-1.44-.516v1.848c.48.192.996.288 1.44.288 2.22 0 4.02-1.8 4.02-4.02s-1.8-4.02-4.02-4.02c-.444 0-.96.096-1.44.288v1.872zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Canva</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon vscode">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">VS Code</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon postgresql">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-.7949-.274a6.0289 6.0289 0 0 1-.2141.0431 4.1906 4.1906 0 0 0-.4763-.6583c-.1462-.1462-.3275-.295-.5475-.439V12.39c0-3.4762-1.6971-5.9618-4.0644-6.5031a3.9006 3.9006 0 0 0-1.0625-.1462h-.0694c-.0755 0-.1462.0046-.2216.0139-.0566-.0073-.1149-.011-.1735-.011h-.0073a3.5842 3.5842 0 0 0-1.2033.2172 4.3948 4.3948 0 0 1-.2945.0925 1.2928 1.2928 0 0 1-.396-.0532 1.7529 1.7529 0 0 1-.2457-.0755 2.0266 2.0266 0 0 0-.7-.1265h-.0139a1.1645 1.1645 0 0 0-.3089.0385c-.9119.2588-1.5034 1.0269-1.7163 2.2241a6.2593 6.2593 0 0 0-.0458 1.2033v.9638a11.9888 11.9888 0 0 0-.084.9057c-.139.9013-.2967 1.9225-.5164 2.9225a10.3038 10.3038 0 0 1-.8262 2.4853c-.2141.3968-.4677.7446-.7589 1.0365a2.5599 2.5599 0 0 0-.435.5752c-.0755.1293-.139.2727-.1942.4231a1.4942 1.4942 0 0 0 .1418 1.426c.1966.2727.5241.3994.9997.3865.2166-.0073.4307-.0272.6425-.0566.6656-.0992 1.3284-.2979 1.9697-.5913a11.9697 11.9697 0 0 0 2.6088-1.5733c.9735-.7203 1.9242-1.6203 2.9034-2.7534a.9927.9927 0 0 1 .1397-.1257l.1257-.1155c.1265-.1175.2585-.2288.396-.339.295-.2339.6112-.4585.9429-.6776a7.0734 7.0734 0 0 1 1.5222-.7873 4.1268 4.1268 0 0 1 1.3919-.2385h.0694c.0639 0 .1265.0046.1897.0086a4.2312 4.2312 0 0 1 .4424.0586 4.2476 4.2476 0 0 1 .825.2394c.2679.0992.5171.2019.7449.3068.2145.0972.4149.1929.6007.2873.3974.1911.731.3631 1.0365.5019.2532.1155.4997.2145.7449.2967a5.5544 5.5544 0 0 0 .8448.2394c.2632.0525.5218.0858.7688.0858a1.8756 1.8756 0 0 0 .6425-.0992c.2054-.0755.3761-.1991.5019-.3865.1275-.1897.1911-.4304.1911-.7159 0-.2019-.0266-.4091-.0791-.6159zM8.9590 17.8095a12.5618 12.5618 0 0 1-2.3967 1.4531 8.2717 8.2717 0 0 1-1.6344.5019c-.1418.0232-.2832.0378-.4231.0458-.139.0073-.2785.0086-.4158.0046-.1377-.0046-.2672-.0185-.3913-.0419a.7131.7131 0 0 1-.2979-.1068.4125.4125 0 0 1-.1462-.1462.6477.6477 0 0 1-.0525-.2967c.0073-.139.0445-.2967.1098-.4685.0639-.1675.1509-.3368.2606-.5072.1257-.1897.2819-.3699.4658-.5406.2019-.1862.4231-.3605.6631-.5206a5.6184 5.6184 0 0 0 .85-.6776c.295-.2725.5913-.5751.8867-.9057.2927-.3275.5834-.6776.8681-1.0504.2819-.3699.5565-.7622.8208-1.1766.1257-.1966.2453-.3932.3605-.5885.1098-.1846.2132-.3692.3061-.5512a3.9499 3.9499 0 0 0 .2832-.6631c.0639-.1846.1098-.3699.1418-.5579.0073-.0186.0139-.0378.0186-.0566.0046-.0186.0092-.0378.0139-.0566.0092-.0566.0185-.1098.0272-.1675.0092-.0566.0185-.1098.0259-.1675.0092-.0566.0185-.1098.0259-.1675.0092-.0566.0185-.1098.0259-.1675.0185-.1155.0378-.2193.0566-.3162.0185-.0992.0378-.1897.0566-.2832.0185-.0992.0378-.1897.0566-.2832.0185-.0992.0378-.1897.0566-.2832.0378-.1897.0766-.3699.1155-.5406.0378-.1675.0766-.3275.1155-.4765.0378-.1491.0766-.2887.1155-.4158.0378-.1265.0766-.2385.1155-.3368.0639-.1897.1291-.3368.1942-.4358.0185-.0232.0378-.0445.0566-.0639.0185-.0186.0378-.0378.0566-.0566.0185-.0139.0378-.0279.0566-.0392.0185-.0139.0378-.0259.0566-.0366.0279-.0139.0566-.0185.0834-.0139.0279.0046.0566.0185.0834.0432-.0139.2319-.0272.4812-.0432.7472a29.7652 29.7652 0 0 1-.084 1.0225c-.139.8815-.2967 1.9225-.5164 2.9225a10.3038 10.3038 0 0 1-.8262 2.4853c-.2141.3968-.4677.7446-.7589 1.0365-.2019.1897-.4052.3699-.6086.5406z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">PostgreSQL</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon flutter">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Flutter</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon dart">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263h4.842V10.204l-9.21-9.21c-.401-.401-.91-.295-1.175-.203-.496.174-.8.465-.973.613-.62.538-1.35 1.316-2.865 3.147-2.688 3.25-3.926 4.865-4.456 5.546-.334.429-.211.943-.211 1.38z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Dart</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon supabase">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.166 21.885c-.516.72-1.598.597-1.934-.22l-5.39-13.13c-.331-.805.285-1.687 1.136-1.626l11.727.838c.852.061 1.318 1.045.834 1.76l-6.373 12.378zM11.834 2.115c.516-.72 1.598-.597 1.934.22l5.39 13.13c.331.805-.285 1.687-1.136 1.626l-11.727-.838c-.852-.061-1.318-1.045-.834-1.76l6.373-12.378z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Supabase</h3>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon php">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.686-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.285.164h-1.18l-.327 1.681h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.33 1.752zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">PHP Native</h3>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="proyek">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyek Pilihan</h2>
+                <p class="section-subtitle">Proyek yang Saya Kembangkan dan Pelajari</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Project Tabs -->
+            <div class="project-tabs">
+                <button class="project-tab active" data-tab="dinamis">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Dinamis
+                </button>
+                <button class="project-tab" data-tab="statis">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    Statis
+                </button>
+                <button class="project-tab" data-tab="mobile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    Mobile
+                </button>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content-wrapper">
+                <!-- Dinamis Content -->
+                <div class="project-tab-content active" id="dinamis-content">
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="simas" tabindex="0" role="button" aria-label="Lihat detail proyek SIMAS">
+                            <div class="project-image">
+                                <img src="assets/Simas.jpeg" alt="SIMAS Asset Management">
+                                <div class="project-overlay">
+                                    <button class="btn-view-detail" type="button">Lihat Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">SIMAS Asset Management</h3>
+                                <p class="project-description">Aplikasi pengelolaan aset yang dikembangkan menggunakan Laravel dengan fokus pada alur pengelolaan dan akses pengguna.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">PHP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KarelKrnlius/simas-asset-management" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-project="knotted" tabindex="0" role="button" aria-label="Lihat detail proyek KNOTTED">
+                            <div class="project-image">
+                                <img src="assets/Knotted.png" alt="KNOTTED E-Commerce">
+                                <div class="project-overlay">
+                                    <button class="btn-view-detail" type="button">Lihat Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">KNOTTED</h3>
+                                <p class="project-description">Website e-commerce modern untuk produk handmade crochet dengan fitur lengkap untuk customer dan admin, termasuk shopping cart, checkout, dan payment verification.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">Supabase</span>
+                                    <span class="tag">Tailwind CSS</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/faqihanakbaik/KNOTTED" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                    <a href="https://knotted-production.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statis Content -->
+                <div class="project-tab-content" id="statis-content">
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="bank" tabindex="0" role="button" aria-label="Lihat detail proyek Bank">
+                            <div class="project-image">
+                                <img src="assets/Bank.jpeg" alt="Bank Melasa Syariah">
+                                <div class="project-overlay">
+                                    <button class="btn-view-detail" type="button">Lihat Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Bank Melasa Syariah</h3>
+                                <p class="project-description">Website bertema layanan perbankan syariah yang menjadi salah satu proyek portofolio web statis dengan desain modern.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/faqihanakbaik/lpss" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                    <a href="http://bank-melasa-syariah.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-project="portfolio" tabindex="0" role="button" aria-label="Lihat detail proyek Portfolio">
+                            <div class="project-image">
+                                <img src="assets/logo.png" alt="Portfolio Website">
+                                <div class="project-overlay">
+                                    <button class="btn-view-detail" type="button">Lihat Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Portfolio Website</h3>
+                                <p class="project-description">Website portfolio pribadi yang menampilkan profil, proyek, dan informasi kontak dengan desain responsif dan modern.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ultramennmeerah/Portofolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Content -->
+                <div class="project-tab-content" id="mobile-content">
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="eventy-mobile" tabindex="0" role="button" aria-label="Lihat detail proyek EVENTY Mobile">
+                            <div class="project-image">
+                                <img src="assets/Eventty.jpeg" alt="EVENTY Mobile App">
+                                <div class="project-overlay">
+                                    <button class="btn-view-detail" type="button">Lihat Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">EVENTY (Mobile App)</h3>
+                                <p class="project-description">Aplikasi mobile untuk School Event Management System yang terintegrasi dengan backend Laravel dan Supabase.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">Dart</span>
+                                    <span class="tag">Supabase</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/GEraldY56/EVENTTY" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontak">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontak</h2>
+                <p class="section-subtitle">Terbuka untuk belajar, kolaborasi, dan diskusi seputar pengembangan web.</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Mari Berdiskusi</h3>
+                    <p class="contact-text">
+                        Kirim pesan jika ingin berdiskusi tentang proyek, pengembangan web, atau peluang kolaborasi.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:faqihmuqoddam3007@gmail.com">faqihmuqoddam3007@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Jakarta Selatan, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/faqihanakbaik" target="_blank" rel="noopener noreferrer">github.com/faqihanakbaik</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/faqih-muqoddam-93a359394/" target="_blank" rel="noopener noreferrer">linkedin.com/in/faqih-muqoddam-93a359394</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/faqiiihhhhhh" target="_blank" rel="noopener noreferrer">@faqiiihhhhhh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact Actions -->
+                    <div class="contact-actions">
+                        <a href="mailto:faqihmuqoddam3007@gmail.com?subject=Halo%20dari%20Portfolio%20Website&body=Halo%20Faqih,%0A%0ASaya%20ingin%20berdiskusi%20tentang..." class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Kirim Email
+                        </a>
+                        <a href="https://wa.me/628131847701?text=Halo%20Faqih,%20saya%20sangat%20tertarik%20dengan%20portfolio%20Anda" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Muhammad Faqih Muqoddam</h3>
+                    <p>Junior Web Developer • SMKN 20 Jakarta</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/faqihanakbaik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/faqih-muqoddam-93a359394/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/faqiiihhhhhh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Muhammad Faqih Muqoddam. Made with <span class="heart">❤</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-label="Detail proyek" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <p class="toast-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

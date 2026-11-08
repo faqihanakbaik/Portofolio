@@ -1,0 +1,47 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Node modules (if you add any build tools later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment variables (if you add backend)
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output (if you add build process)
+dist/
+build/
+.cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Package manager lock files (optional)
+# package-lock.json
+# yarn.lock
