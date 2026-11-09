@@ -484,3 +484,115 @@ projectTabs.forEach(tab => {
         }
     });
 });
+
+
+// ====================================
+// Project Search Functionality
+// ====================================
+const projectSearchInput = document.getElementById('projectSearch');
+const searchClearBtn = document.getElementById('searchClear');
+const searchResultsInfo = document.getElementById('searchResultsInfo');
+
+if (projectSearchInput) {
+    projectSearchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        // Show/hide clear button
+        if (searchTerm) {
+            searchClearBtn.style.display = 'flex';
+        } else {
+            searchClearBtn.style.display = 'none';
+            searchResultsInfo.style.display = 'none';
+        }
+        
+        filterProjects(searchTerm);
+    });
+    
+    // Clear search
+    searchClearBtn.addEventListener('click', () => {
+        projectSearchInput.value = '';
+        searchClearBtn.style.display = 'none';
+        searchResultsInfo.style.display = 'none';
+        filterProjects('');
+    });
+}
+
+function filterProjects(searchTerm) {
+    const activeTab = document.querySelector('.project-tab-content.active');
+    if (!activeTab) return;
+    
+    const projectCards = activeTab.querySelectorAll('.project-card');
+    let visibleCount = 0;
+    
+    projectCards.forEach(card => {
+        // Get project data
+        const title = card.querySelector('.project-title')?.textContent.toLowerCase() || '';
+        const description = card.querySelector('.project-description')?.textContent.toLowerCase() || '';
+        const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
+        
+        // Combine all searchable text
+        const searchableText = `${title} ${description} ${tags}`;
+        
+        // Check if search term matches
+        if (searchTerm === '' || searchableText.includes(searchTerm)) {
+            card.classList.remove('hidden');
+            visibleCount++;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+    
+    // Remove existing no results message
+    const existingMsg = activeTab.querySelector('.no-results-message');
+    if (existingMsg) {
+        existingMsg.remove();
+    }
+    
+    // Show results info
+    if (searchTerm) {
+        if (visibleCount > 0) {
+            searchResultsInfo.textContent = `Ditemukan ${visibleCount} proyek`;
+            searchResultsInfo.style.display = 'block';
+        } else {
+            searchResultsInfo.textContent = 'Tidak ada proyek yang cocok';
+            searchResultsInfo.style.display = 'block';
+            
+            // Show no results message
+            const grid = activeTab.querySelector('.projects-grid');
+            const noResultsDiv = document.createElement('div');
+            noResultsDiv.className = 'no-results-message';
+            noResultsDiv.innerHTML = `
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <h3>Proyek tidak ditemukan</h3>
+                <p>Coba kata kunci lain atau lihat semua proyek</p>
+            `;
+            grid.appendChild(noResultsDiv);
+        }
+    } else {
+        searchResultsInfo.style.display = 'none';
+    }
+}
+
+// Reset search when switching tabs
+projectTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        if (projectSearchInput) {
+            projectSearchInput.value = '';
+            searchClearBtn.style.display = 'none';
+            searchResultsInfo.style.display = 'none';
+            
+            // Remove all hidden classes
+            document.querySelectorAll('.project-card.hidden').forEach(card => {
+                card.classList.remove('hidden');
+            });
+            
+            // Remove no results messages
+            document.querySelectorAll('.no-results-message').forEach(msg => {
+                msg.remove();
+            });
+        }
+    });
+});

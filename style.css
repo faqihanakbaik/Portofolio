@@ -703,7 +703,6 @@ body.dark-theme .theme-toggle .moon-icon {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
-    overflow-x: auto;
     padding-bottom: 1rem;
 }
 
@@ -1505,14 +1504,28 @@ body.dark-theme .theme-toggle .moon-icon {
         padding: 1.5rem;
     }
     
-    /* Certificates */
+    /* Certificates - Mobile Slide */
     .certificates-wrapper {
-        grid-template-columns: 1fr;
+        display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin: 0 -2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .certificates-wrapper::-webkit-scrollbar {
+        display: none;
     }
     
     .certificate-card {
+        flex: 0 0 85%;
+        max-width: 320px;
         scroll-snap-align: center;
     }
     
@@ -2354,4 +2367,157 @@ body.dark-theme .btn-outline:hover {
     border-color: var(--accent-color) !important;
     color: var(--accent-color) !important;
     background: var(--tertiary-bg) !important;
+}
+
+
+/* ====================================
+   Project Search Box
+   ==================================== */
+.project-search-wrapper {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.project-search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 0.75rem 1rem;
+    transition: all var(--transition-base);
+}
+
+.project-search-box:focus-within {
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-colored);
+}
+
+.search-icon {
+    color: var(--text-muted);
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.project-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-secondary);
+}
+
+.project-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-clear {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: var(--text-muted);
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-clear:hover {
+    color: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.search-results-info {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.project-card.hidden {
+    display: none !important;
+}
+
+.no-results-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-muted);
+}
+
+.no-results-message svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.no-results-message h3 {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Dark mode for search */
+body.dark-theme .project-search-box {
+    background: var(--tertiary-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-theme .project-search-box:focus-within {
+    border-color: var(--accent-color);
+}
+
+body.dark-theme .project-search-input {
+    color: var(--text-primary);
+}
+
+/* Mobile Slide for Projects */
+@media (max-width: 768px) {
+    .project-search-wrapper {
+        margin: 0 0 2rem;
+        padding: 0 1rem;
+    }
+    
+    .project-search-input {
+        font-size: 0.9375rem;
+    }
+    
+    .projects-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin: 0 -2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    
+    .projects-grid::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .project-card {
+        flex: 0 0 85%;
+        max-width: 350px;
+        scroll-snap-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 0 0 90%;
+    }
+    
+    .certificate-card {
+        flex: 0 0 90%;
+    }
 }
